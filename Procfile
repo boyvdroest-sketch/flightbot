@@ -1,1 +1,1 @@
-python3 start_bot.py
+web: python app.py
