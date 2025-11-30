@@ -28,13 +28,10 @@ def send_welcome(message):
     markup = types.InlineKeyboardMarkup()
     markup.add(types.InlineKeyboardButton("📢 Join Channel", url=CHANNEL_LINK))
     bot.send_message(message.chat.id,
-        f"👋 Welcome, {message.from_user.first_name}!
-"
-  "Thanks for starting the **Accommodation US Bot**.
-"
-"We help you find the best stays in the United States.
-"
-"🔗 Join our channel for the latest deals and updates:",
+        f"👋 Welcome, {message.from_user.first_name}!\n"
+        "Thanks for starting the **Accommodation US Bot**.\n"
+        "We help you find the best stays in the United States.\n\n"
+        "🔗 Join our channel for the latest deals and updates:",
         reply_markup=markup)
 
 print("🤖 Bot is running...")
